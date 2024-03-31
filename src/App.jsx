@@ -28,7 +28,10 @@ function App() {
   return (
     <div className={styles.container}>
       <h1>React Calculator</h1>
-      <p className={styles.operation}>{operation}</p>
+      <input type='text' 
+        className={styles.operation}
+        value={operation}
+        />
       <span className={styles.answer}>{answer}</span>
       <div className={styles.buttons}>
         <Grid container spacing={2}>
